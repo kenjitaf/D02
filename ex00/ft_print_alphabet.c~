@@ -1,0 +1,26 @@
+#include <unistd.h>
+
+  
+
+void  ft_putchar(char c) //pourquoi char c?
+
+{
+  write(1,&c,1);
+}
+
+
+void ft_print_alphabet (void) // on appelle ft_putchar
+{
+  int c; // déclaration variable c
+  c='a'; // valeur c
+  while (c <='z') //boucle
+    {
+      ft_putchar (c); //ft_putchar = c
+     c++; // compteur
+    }
+}
+
+int main (void) //on appelle la foncion ft_print_alphabet
+{
+  ft_print_alphabet();
+}
